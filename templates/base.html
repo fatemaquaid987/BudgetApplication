@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RESTful Budget application with AJAJ!</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+	</head>
+	<body>
+	    <h1> My Budget Application </h1>
+		<table id="theTable">
+		</table>
+        <div class = "forms">
+		<h3> Add new category: </h3>
+		
+		<form name="theForm">
+			Category Name: <input type="text" id="newCatName" name="categoryName" value="" />
+			<br/>
+			Category Budget: <input type="text" id="newCatBudget" name="categoryBudget" value="" />
+			<br/>
+			<input type="button" id="catButton" value="Add" />
+		</form>
+
+		<h3> Add new purchase: </h3>
+		<form name="thePurchaseForm">
+			Purchase Amount: <input type="text" id="newAmount" name="Amount" value="" />
+			<br/>
+			Purchased On: <input type="text" id="newName" name="Name" value="" />
+			<br/>
+			Purchase Date: <input type="date" id="newDate" name="Date" value="" />
+			<br/>
+			Purchase Category: <input list="catList" id = "purCat" name="categoryList" value = "" />
+			  <datalist id="catList">
+			  <option value= 'none'> 
+			  </datalist>
+			<!--Purchase Category: <input type="text" id="newCat" name="Cat" value="" !-->
+			<br/>
+			<input type="button" id="purButton" value="Add" />
+		</form>
+		</div>
+	</body>
+</html>
