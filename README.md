@@ -7,7 +7,7 @@ This is a very simple budget application for a single user. The application supp
 
 ## How to run
 
-On Windows open Command prompt or terminal on Mac.  
+Open Command prompt on Windows or terminal on Mac.  
 Set the FLASK_APP environment variable to your budget.py as: "set FLASK_APP=path/budget.py"  
 Run the application using: "flask run"
 
